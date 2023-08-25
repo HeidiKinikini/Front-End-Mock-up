@@ -11,14 +11,8 @@
 }
 
 .background{
-    width: 100%;
+    width: 100vw;
     height: 100vh;
-   
-}
-
-.user {
-    display: flex;
-    justify-content: flex-end;
 }
 
 button {
@@ -31,8 +25,9 @@ button {
     font-size: 12px;
     font-weight: bold;
     margin-top: 0%;
-    margin-right: 3%;
+    margin-right: 2%;
     cursor: pointer;
+    margin-left: 10%;
 }
 
 .container {
@@ -56,7 +51,7 @@ button {
 
 .info h1 {
     font-size: var(--headerfont);
-    margin-left: 3%;
+    margin-left: 10%;
     letter-spacing: 10px;
 }
 
@@ -65,78 +60,11 @@ button {
     font-size: var(--description);
     margin: 20px 0;
     line-height: 18px;
-    margin-left: 2.5%;
+    margin-left: 10%;
 }
 
-.info start-button {
-    padding: 8px 25px;
-    background: transparent;
-    outline: none;
-    border: 2px solid #fff;
-    border-radius: 20px;
-    color: #fff;
-    font-size: var(--description);
-    font-weight: bold;
-    margin-top: 2%;
-    cursor: pointer;
-}
-
-.slider{
-    display: flex;
-    align-items: center;
-    position: absolute;
-    right: 30px;
-    bottom: 50px;
-}
-
-#prev, #next{
-    width: 20px;
-    cursor: pointer;
-}
-
-/* slider */
 
 img{
-    width: 200px;
-    height: 200px;
+    width: 100vw;
+    height: 100vh;
 }
-.slider .slider-item{
-    display: none;
-    animation: reveal .5s ease-in-out;
-}
-  .slider .slider-item.active {
-    display: block;
-  }
-  .slider .dots {
-    text-align: center;
-    padding: 10px;
-  }
-  .slider .dots li {
-    cursor: pointer;
-    display: inline-block;
-    background: #333;
-    color: #fff;
-    padding: 7px 11px;
-    line-height: .5;
-    border-radius: 50%;
-    text-indent: -9999px;
-    opacity: .5;
-    -webkit-transition: opacity .2s;
-    -o-transition: opacity .2s;
-    transition: opacity .2s;
-  }
-  .slider .dots li.active{
-    opacity: 1;
-  }
-  @keyframes reveal{
-    from{
-      opacity: 0;
-    }
-    to{
-      opacity: 1;
-    }
-  }
-
-
-
-
